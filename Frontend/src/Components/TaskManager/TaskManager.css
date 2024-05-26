@@ -1,0 +1,136 @@
+.task-container {
+  gap: 10px;
+  max-width: 100%;
+  text-align: center;
+  background-color: rgb(125, 194, 254);
+  height: 91vh;
+  padding: 10px;
+}
+
+.task-heading {
+  align-self: center;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container td{
+  padding: 8px;
+  border: 0.08rem solid #ffffff;
+}
+
+.table-container th {
+  background-color: #ffa939;
+  color: #000000;
+  padding: 8px;
+  border: 0.05rem solid #000000;
+}
+
+.buttons-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #007bff;
+  border: 1px solid transparent;
+  margin: 2px;
+  padding: 0.35rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  width: 8rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button-delete {
+  background-color: #dc3545;
+}
+
+.button-delete:hover {
+  background-color: #bd2130;
+}
+
+.button-add-task {
+  padding: 10px 20px;
+}
+
+@media (max-width: 786px) {
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .table-container {
+    font-size: 0.74rem;
+  }
+
+  .table-container td,
+  .table-container th {
+    padding: 4px;
+    border: 0.1rem solid #ffffff;
+  }
+
+  .button {
+    width: 5rem;
+    line-height: 0%;
+    padding: 5px;
+    margin: 1px;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+
+  .buttons-container button {
+    width: 8rem;
+    padding: 1.2rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .table-container {
+    font-size: 0.6rem;
+  }
+
+  .table-container td,
+  .table-container th {
+    padding: 4px;
+    border: 0.1rem solid #ffffff;
+  }
+
+  .button {
+    width: 1rem;
+    padding: 0px;
+    height: fit-content;
+  }
+
+  .buttons-container button {
+    width: 6rem;
+  }
+
+}

@@ -1,0 +1,106 @@
+.add-task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 194, 254);
+    height: 91vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task-heading {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.task-input-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+label {
+    width: 20%;
+    min-width: 100px;
+}
+
+input {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.button-add {
+    background-color: #28a745;
+    color: white;
+}
+
+.button-add:hover {
+    background-color: #00701a;
+}
+
+.arrow {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .add-task-container {
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .form-container{
+        width: 80%;
+    }
+
+    .task-input-line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-task-container {
+        padding: 10px;
+    }
+
+    .task-heading {
+        font-size: 1.2em;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .arrow {
+        font-size: 25px;
+    }
+}
